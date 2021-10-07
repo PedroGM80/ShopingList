@@ -20,7 +20,7 @@
         android:freezesText="true"
         android:gravity="center_horizontal"
         android:text=""
-        android:textSize="18sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -29,7 +29,7 @@
         android:freezesText="true"
         android:gravity="center_horizontal"
         android:text=""
-        android:textSize="18sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -38,7 +38,7 @@
         android:freezesText="true"
         android:gravity="center_horizontal"
         android:text=""
-        android:textSize="18sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -47,7 +47,7 @@
         android:freezesText="true"
         android:gravity="center_horizontal"
         android:text=""
-        android:textSize="18sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -56,7 +56,7 @@
         android:freezesText="true"
         android:gravity="center_horizontal"
         android:text=""
-        android:textSize="18sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -65,7 +65,7 @@
         android:freezesText="true"
         android:gravity="center_horizontal"
         android:text=""
-        android:textSize="18sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView7"
@@ -74,7 +74,7 @@
         android:freezesText="true"
         android:gravity="center_horizontal"
         android:text=""
-        android:textSize="18sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView8"
@@ -83,7 +83,7 @@
         android:freezesText="true"
         android:gravity="center_horizontal"
         android:text=""
-        android:textSize="18sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView9"
@@ -92,7 +92,7 @@
         android:freezesText="true"
         android:gravity="center_horizontal"
         android:text=""
-        android:textSize="18sp" />
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView10"
@@ -101,7 +101,7 @@
         android:freezesText="true"
         android:gravity="center_horizontal"
         android:text=""
-        android:textSize="18sp" />
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/button"
@@ -119,16 +119,25 @@
         android:textStyle="bold"
         android:visibility="visible"
         app:icon="@drawable/ic_baseline_add_shopping_cart_24"
-        app:iconGravity="textTop"
+        app:iconGravity="textStart"
         app:iconSize="20dp" />
+
+    <EditText
+        android:id="@+id/myLoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:onClick="findNear"
+        android:text="Localizar"
         app:icon="@drawable/ic_baseline_search_24"
-        app:iconGravity="textTop"
+        app:iconGravity="textStart"
         app:iconSize="20dp" />
 
 </LinearLayout>

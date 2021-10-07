@@ -3,8 +3,11 @@ package gallego.pedro.shopinglist;
 import static gallego.pedro.shopinglist.R.id;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,8 +42,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nextScreen(View view) {
-        Intent intentgo = new Intent(MainActivity.this, SecondActivity.class);
-        startActivity(intentgo);
+        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+        startActivity(intent);
     }
 
+    public void findNear(View view) {
+        findViewById(R.id.textView10);
+        EditText textIn=findViewById(id.myLoc);
+        Uri addressUri = Uri.parse("geo:0,0?q=" +textIn.getText() );
+        Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Log.d("ImplicitIntents", "Can't handle this intent!");
+        }
+    }
 }
