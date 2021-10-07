@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ShopingList</string>
+    <string name="cacao">Cacao</string>
+    <string name="cafe">Café</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="azucar">Azúcar</string>
+    <string name="leche">Leche</string>
+    <string name="harina">Harina</string>
+    <string name="mantequilla">Mantequilla</string>
+    <string name="aceite">Aceite</string>
+    <string name="sal">Sal</string>
+    <string name="levadura">Levadura</string>
+    <string name="aniadir">Añadir</string>
+</resources>
